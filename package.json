@@ -1,0 +1,42 @@
+{
+  "name": "Now: Time",
+  "author": "atomlabor",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.0.0"
+  },
+  "pebble": {
+    "displayName": "Now: Time",
+    "uuid": "0f8a3d5c-e291-4b1a-9d7e-6f82b4a1c3d9",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": { "watchface": true },
+    "capabilities": ["health", "configurable"],
+    "messageKeys": {
+      "ID_TRACK_NAME": 100,
+      "ID_FAV_SONG": 101,
+      "ID_HEADER_COLOR": 102,
+      "ID_LASTFM_USER": 103,
+      "ID_VIBRATE": 104
+    },
+    "resources": {
+      "media": [        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "menuIcon": true,
+          "file": "images/menu_icon.png"
+        }]
+    }
+  }
+}
